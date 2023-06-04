@@ -9,8 +9,9 @@ import clients from "../../public/data/clients";
 import features from "../../public/data/features";
 import services from "../../public/data/services";
 import { useState } from "react";
-import Modal from "@/components/Modal/Modal";
+
 import { createPortal } from "react-dom";
+import Modal from "@/components/Modal/Modal";
 const Home = () => {
   const [isMenuOpen, setMenuOpen] = useState(false);
 
