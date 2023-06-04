@@ -11,13 +11,16 @@ import services from "../../public/data/services";
 import { useState } from "react";
 
 import { createPortal } from "react-dom";
+import { disableBodyScroll, enableBodyScroll } from "body-scroll-lock";
 import Modal from "@/components/Modal/modal";
 import Head from "next/head";
 const Home = () => {
   const [isMenuOpen, setMenuOpen] = useState(false);
-
   const toggleMenu = () => {
     setMenuOpen(!isMenuOpen);
+    isMenuOpen
+      ? enableBodyScroll(document.body)
+      : disableBodyScroll(document.body);
   };
 
   return (

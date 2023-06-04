@@ -8,6 +8,7 @@ const Layout = ({ children }) => {
     AOS.init({
       duration: 500,
       once: true,
+      disable: "mobile",
     });
   }, []);
   return (

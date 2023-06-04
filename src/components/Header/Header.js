@@ -2,18 +2,18 @@ import Link from "next/link";
 
 import MobileMenu from "../MobileMenu/MobileMenu";
 import { useState } from "react";
-import { useMediaQuery } from "react-responsive";
-
 import { useRouter } from "next/router";
 import navLinks from "../../../public/data/NavLinks";
-
+import { disableBodyScroll, enableBodyScroll } from "body-scroll-lock";
 const Header = () => {
   const [isMobileMenuOpened, setIsMobileMenuOpened] = useState(false);
-  const isMobile = useMediaQuery({ query: "(max-width: 768px)" });
   const { pathname } = useRouter();
 
   const toggleMenu = () => {
     setIsMobileMenuOpened(!isMobileMenuOpened);
+    isMobileMenuOpened
+      ? enableBodyScroll(document.body)
+      : disableBodyScroll(document.body);
   };
   return (
     <header className="header">

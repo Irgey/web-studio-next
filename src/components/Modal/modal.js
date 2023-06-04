@@ -2,7 +2,7 @@ const Modal = ({ toggleMenu }) => {
   return (
     <div
       className="backdrop is-hidden"
-      data-aos="fade-left"
+      data-aos="fade"
       data-aos-duration="1000"
     >
       <div className="modal">

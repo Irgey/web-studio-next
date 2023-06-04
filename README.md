@@ -1,38 +1,41 @@
-This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
 
-## Getting Started
+# Web Studio Site
 
-First, run the development server:
+WebStudio site to show my skills in Frontend development for SoftRyzen company.
 
-```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-```
+**Vercel deployment**:(https://web-studio-next.vercel.app/)
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
 
-You can start editing the page by modifying `pages/index.js`. The page auto-updates as you edit the file.
+There is a 4 pages on this site:
+- [Studio page](https://web-studio-next.vercel.app/), where you can leave your contact information by clicking on "Замовити послугу" via modal form.
+- [Portfolio page](https://web-studio-next.vercel.app/portfolio), where located developed projects. You can filter them by clicking on group buttons located on top.
+- [Contacts page](https://web-studio-next.vercel.app/contacts), where you can find contact information and check adress on map with [Google maps](https://maps.google.com/).
+- [Error Page](https://web-studio-next.vercel.app/12). Standard 404 page on wrong routes. Redirecting to Studio page in 3 seconds.
 
-[API routes](https://nextjs.org/docs/api-routes/introduction) can be accessed on [http://localhost:3000/api/hello](http://localhost:3000/api/hello). This endpoint can be edited in `pages/api/hello.js`.
 
-The `pages/api` directory is mapped to `/api/*`. Files in this directory are treated as [API routes](https://nextjs.org/docs/api-routes/introduction) instead of React pages.
+## Demo
 
-This project uses [`next/font`](https://nextjs.org/docs/basic-features/font-optimization) to automatically optimize and load Inter, a custom Google Font.
+![Studio Page](./public/images/gh-preview/src-1.png)
+![Porfolio Page](./public/images/gh-preview/src-2.png)
+![Contacts Page](./public/images/gh-preview/src-3.png)
 
-## Learn More
 
-To learn more about Next.js, take a look at the following resources:
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+## Tech Stack
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js/) - your feedback and contributions are welcome!
+**Client:** NextJS, SASS, react-aos, body-scroll-lock
 
-## Deploy on Vercel
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/deployment) for more details.
+## Features
+
+- Adaptive design (phone, tablet, desktop)
+- Live previews
+- Animations on desktop version
+
+
+
+## Support
+
+Feel free to contact with me via Telegram (@serejque) for support.
+
