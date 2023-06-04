@@ -7,7 +7,7 @@ const clients = [
       width: 41,
       height: 47,
     },
-    link: "",
+    link: "http://company.com",
   },
   {
     id: 2,
@@ -18,7 +18,7 @@ const clients = [
       width: 40,
       height: 52,
     },
-    link: "",
+    link: "http://company.com",
   },
   {
     id: 3,
@@ -29,7 +29,7 @@ const clients = [
       width: 43,
       height: 41,
     },
-    link: "",
+    link: "http://company.com",
   },
   {
     id: 4,
@@ -40,7 +40,7 @@ const clients = [
       width: 84,
       height: 42,
     },
-    link: "",
+    link: "http://company.com",
   },
   {
     id: 5,
@@ -51,7 +51,7 @@ const clients = [
       width: 62,
       height: 45,
     },
-    link: "",
+    link: "http://company.com",
   },
   {
     id: 6,
@@ -62,7 +62,7 @@ const clients = [
       width: 94,
       height: 44,
     },
-    link: "",
+    link: "http://company.com",
   },
 ];
 
