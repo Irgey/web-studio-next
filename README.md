@@ -37,4 +37,4 @@ Contacts Page
 
 ## Support
 
-Feel free to contact with me via Telegram (@serejque) for support.
+Feel free to contact with me via Telegram [@serejque](https://t.me/Serejque) for support.
