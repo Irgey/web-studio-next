@@ -11,6 +11,11 @@ There is a 4 pages on this site:
 - [Contacts page](https://web-studio-next.vercel.app/contacts), where you can find contact information and check adress on map with [Google maps](https://maps.google.com/).
 - [Error Page](https://web-studio-next.vercel.app/12). Standard 404 page on wrong routes. Redirecting to Studio page in 3 seconds.
 
+## Optimizations
+
+- **PageSpeed Insights mobile** - [click.](https://pagespeed.web.dev/analysis/https-web-studio-next-vercel-app/gadpqvmym4?form_factor=mobile)
+- **PageSpeed Insights desktop** - [click.](https://pagespeed.web.dev/analysis/https-web-studio-next-vercel-app/gadpqvmym4?form_factor=desktop)
+
 ## Demo
 
 Studio Page
