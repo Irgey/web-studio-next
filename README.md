@@ -15,9 +15,9 @@ There is a 4 pages on this site:
 
 ## Demo
 
-![Studio Page](./public/images/gh-preview/src-1.png)
-![Porfolio Page](./public/images/gh-preview/src-2.png)
-![Contacts Page](./public/images/gh-preview/src-3.png)
+![Studio Page](./public/images/gh-preview/scr-1.png)
+![Porfolio Page](./public/images/gh-preview/scr-2.png)
+![Contacts Page](./public/images/gh-preview/scr-3.png)
 
 
 
