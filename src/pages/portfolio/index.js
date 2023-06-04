@@ -16,7 +16,11 @@ const Portfolio = () => {
       <section className="product section">
         <div className="container">
           <h1 className="visually-hidden">Проєкти</h1>
-          <ul className="categories">
+          <ul
+            className="categories"
+            data-aos="fade-up"
+            data-aos-duration="1000"
+          >
             {filterCategories.map((category, index) => (
               <FilterBtn
                 key={index}
@@ -28,7 +32,11 @@ const Portfolio = () => {
           </ul>
           {/* <!-- Products --> */}
           {projects ? (
-            <ul className="product__list">
+            <ul
+              className="product__list"
+              data-aos="fade"
+              data-aos-duration="1000"
+            >
               {projects
                 .filter((project) => {
                   if (filterType === "Усі") return project;

@@ -19,13 +19,14 @@ const Home = () => {
   const toggleMenu = () => {
     setMenuOpen(!isMenuOpen);
   };
+
   return (
     <>
       <Head>
         <title>Студія | WebStudio</title>
       </Head>
       {/* <!-- Hero section --> */}
-      <section className="hero">
+      <section className="hero" data-aos="fade-up" data-aos-duration="1000">
         <div className="hero__content">
           <h1 className="hero__title">Ефективні рішення для вашого бізнесу</h1>
           <button className="hero__button" type="button" onClick={toggleMenu}>
@@ -37,7 +38,7 @@ const Home = () => {
       </section>
       {/* <!-- Features section --> */}
       {features && (
-        <section className="features section">
+        <section className="features section" data-aos="fade">
           <div className="features__container container">
             <h2 className="visually-hidden">НАШІ ПЕРЕВАГИ</h2>
 
@@ -53,7 +54,7 @@ const Home = () => {
       )}
       {/* <!-- Services section --> */}
       {services && (
-        <section className="services section">
+        <section className="services section" data-aos="fade-up">
           <div className="services__container container">
             <h2 className="title">Чим ми займаємося</h2>
             <ul className="services__list">
@@ -68,7 +69,7 @@ const Home = () => {
       )}
       {/* <!-- Team section --> */}
       {teamMembers && (
-        <section className="team section">
+        <section className="team section" data-aos="fade">
           <div className="team__container container">
             <h2 className="team__title title">Наша команда</h2>
             <ul className="team__list">
@@ -82,7 +83,7 @@ const Home = () => {
       )}
       {/* <!-- Clients section --> */}
       {clients && (
-        <section className="clients section">
+        <section className="clients section" data-aos="fade-up">
           <div className="clients__container container">
             <h2 className="clients__title title">Постійні клієнти</h2>
             <ul className="clients__list">

@@ -6,7 +6,7 @@ const Contacts = () => {
       <Head>
         <title>Контакти | WebStudio</title>
       </Head>{" "}
-      <section className="section">
+      <section className="section" data-aos="fade-up" data-aos-duration="1000">
         <h2 className="title">Як нас знайти</h2>
         <div className="contacts__container container">
           {" "}
