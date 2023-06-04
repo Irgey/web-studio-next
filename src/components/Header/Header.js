@@ -23,9 +23,10 @@ const Header = () => {
           <span className="logo__part">Web</span>Studio
         </Link>
         <button
-          className="header__btn-menu js-open-menu"
+          className="header__btn-menu"
           type="button"
           onClick={toggleMenu}
+          aria-label="navigation menu"
         >
           <svg className="" width="24" height="16">
             <use href="./images/sprite.svg#icon-menu"></use>
