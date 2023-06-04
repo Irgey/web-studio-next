@@ -1,6 +1,6 @@
 import Link from "next/link";
-import { navLinks } from "@/data/NavLinks";
 import { useRouter } from "next/router";
+import navLinks from "../../../public/data/NavLinks";
 const MobileMenu = ({ isOpened, onCloseMenuClick }) => {
   const { pathname } = useRouter();
 

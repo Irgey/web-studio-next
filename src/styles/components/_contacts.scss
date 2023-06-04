@@ -1,0 +1,25 @@
+.contacts__container {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  gap: 30px;
+  @media screen and (min-width: 1200px) {
+    flex-direction: row;
+  }
+}
+.contacts__container .address__link {
+  @extend %link;
+}
+.address {
+  font-style: normal;
+}
+
+.g-maps {
+  width: 300px;
+  height: 250px;
+  @media screen and (min-width: 768px) {
+    width: 600px;
+    height: 550px;
+  }
+}

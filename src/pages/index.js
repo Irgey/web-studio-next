@@ -1,12 +1,13 @@
-import Image from "next/image";
-import services from "@/data/services";
 import ServiceCard from "@/components/ServiceCard/ServiceCard";
-import features from "@/data/features";
+
 import FeatureCard from "@/components/FeatureCard/FeatureCard";
-import { teamMembers } from "@/data/teamMembers";
+
 import TeamCard from "@/components/TeamCard/TeamCard";
-import clients from "@/data/clients";
 import ClientCard from "@/components/ClientCard/ClientCard";
+import teamMembers from "../../public/data/teamMembers";
+import clients from "../../public/data/clients";
+import features from "../../public/data/features";
+import services from "../../public/data/services";
 const Home = () => {
   return (
     <>

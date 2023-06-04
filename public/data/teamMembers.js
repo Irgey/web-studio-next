@@ -1,4 +1,4 @@
-export const teamMembers = [
+const teamMembers = [
   {
     id: 1,
     fullName: "Ігор Дем'яненко",
@@ -48,3 +48,5 @@ export const teamMembers = [
     },
   },
 ];
+
+export default teamMembers;

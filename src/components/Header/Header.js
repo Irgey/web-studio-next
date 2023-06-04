@@ -3,8 +3,9 @@ import Link from "next/link";
 import MobileMenu from "../MobileMenu/MobileMenu";
 import { useState } from "react";
 import { useMediaQuery } from "react-responsive";
-import { navLinks } from "@/data/NavLinks";
+
 import { useRouter } from "next/router";
+import navLinks from "../../../public/data/NavLinks";
 
 const Header = () => {
   const [isMobileMenuOpened, setIsMobileMenuOpened] = useState(false);

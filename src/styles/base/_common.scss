@@ -74,7 +74,10 @@
   align-content: center;
   justify-content: center;
 }
+.link {
+  text-decoration: none;
 
+}
 .social__icon {
   fill: var(--main-icon-color);
   transition: fill var(--transition-fast) var(--transition-function);
