@@ -5,6 +5,8 @@ import features from "@/data/features";
 import FeatureCard from "@/components/FeatureCard/FeatureCard";
 import { teamMembers } from "@/data/teamMembers";
 import TeamCard from "@/components/TeamCard/TeamCard";
+import clients from "@/data/clients";
+import ClientCard from "@/components/ClientCard/ClientCard";
 const Home = () => {
   return (
     <>
@@ -63,55 +65,18 @@ const Home = () => {
         </section>
       )}
       {/* <!-- Clients section --> */}
-      <section className="clients section">
-        <div className="clients__container container">
-          <h2 className="clients__title title">Постійні клієнти</h2>
-          <ul className="clients__list">
-            <li className="clients__item">
-              <a className="clients__link" href="">
-                <svg className="clients__icon" width="41" height="47">
-                  <use href="./images/sprite.svg#icon-group"></use>
-                </svg>
-              </a>
-            </li>
-            <li className="clients__item">
-              <a className="clients__link" href="">
-                <svg className="clients__icon" width="40" height="52">
-                  <use href="./images/sprite.svg#icon-group-1"></use>
-                </svg>
-              </a>
-            </li>
-            <li className="clients__item">
-              <a className="clients__link" href="">
-                <svg className="clients__icon" width="43" height="41">
-                  <use href="./images/sprite.svg#icon-group-2"></use>
-                </svg>
-              </a>
-            </li>
-            <li className="clients__item">
-              <a className="clients__link" href="">
-                <svg className="clients__icon" width="84" height="42">
-                  <use href="./images/sprite.svg#icon-group-3"></use>
-                </svg>
-              </a>
-            </li>
-            <li className="clients__item">
-              <a className="clients__link" href="">
-                <svg className="clients__icon" width="62" height="45">
-                  <use href="./images/sprite.svg#icon-group-4"></use>
-                </svg>
-              </a>
-            </li>
-            <li className="clients__item">
-              <a className="clients__link" href="">
-                <svg className="clients__icon" width="94" height="44">
-                  <use href="./images/sprite.svg#icon-group-5"></use>
-                </svg>
-              </a>
-            </li>
-          </ul>
-        </div>
-      </section>
+      {clients && (
+        <section className="clients section">
+          <div className="clients__container container">
+            <h2 className="clients__title title">Постійні клієнти</h2>
+            <ul className="clients__list">
+              {clients.map((client) => (
+                <ClientCard key={client.id} {...client} />
+              ))}
+            </ul>
+          </div>
+        </section>
+      )}
     </>
   );
 };
