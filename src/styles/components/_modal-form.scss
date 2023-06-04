@@ -12,8 +12,6 @@
   border-radius: 4px;
   background-color: var(--primary-white-color);
 
-  transition: opacity 500ms ease var(--transition-slow),
-    transform 1000ms ease var(--transition-slow);
   @media screen and (max-height: 629px) {
     top: 85%;
   }
@@ -44,10 +42,6 @@
     margin-bottom: 10px;
   }
 }
-
-// .modal-label:not(:last-child) {
-//   margin-bottom: 10px;
-// }
 
 .modal-label > .input-field,
 .modal-label > .modal-comment-textarea {
@@ -217,17 +211,4 @@ button .modal-label > .modal-comment-textarea::placeholder {
   height: 100vh;
   overflow-y: auto;
   background-color: var(--backdrop-color);
-
-  transition: opacity var(--transition-slow), visibility var(--transition-slow);
-}
-
-.backdrop.is-hidden {
-  opacity: 0;
-  visibility: hidden;
-  pointer-events: none;
-}
-
-.backdrop.is-hidden .modal {
-  opacity: 0;
-  transform: translateX(-50%) translateY(-70%);
 }

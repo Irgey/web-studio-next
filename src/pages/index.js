@@ -8,16 +8,26 @@ import teamMembers from "../../public/data/teamMembers";
 import clients from "../../public/data/clients";
 import features from "../../public/data/features";
 import services from "../../public/data/services";
+import { useState } from "react";
+import Modal from "@/components/Modal/Modal";
+import { createPortal } from "react-dom";
 const Home = () => {
+  const [isMenuOpen, setMenuOpen] = useState(false);
+
+  const toggleMenu = () => {
+    setMenuOpen(!isMenuOpen);
+  };
   return (
     <>
       {/* <!-- Hero section --> */}
       <section className="hero">
         <div className="hero__content">
           <h1 className="hero__title">Ефективні рішення для вашого бізнесу</h1>
-          <button className="hero__button" type="button" data-modal-open>
+          <button className="hero__button" type="button" onClick={toggleMenu}>
             Замовити послугу
           </button>
+          {isMenuOpen &&
+            createPortal(<Modal toggleMenu={toggleMenu} />, document.body)}
         </div>
       </section>
       {/* <!-- Features section --> */}
