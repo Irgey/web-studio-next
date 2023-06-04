@@ -7,7 +7,7 @@ const Error = () => {
     setTimeout(() => {
       router.push("/");
     }, 3000);
-  }, []);
+  }, [router]);
   return (
     <>
       <section className="hero">

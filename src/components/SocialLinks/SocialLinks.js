@@ -1,10 +1,10 @@
-const SocialLinks = ({ links }) => {
+const SocialLinks = ({ instagram, twitter, facebook, linkedin }) => {
   return (
     <ul className="social">
       <li>
         <a
           className="social__link"
-          href={links.instagram}
+          href={instagram}
           aria-label="Інстаграм"
           target="_blank"
           rel="noopener noreferrer"
@@ -17,7 +17,7 @@ const SocialLinks = ({ links }) => {
       <li>
         <a
           className="social__link"
-          href={links.twitter}
+          href={twitter}
           aria-label="Твітер"
           target="_blank"
           rel="noopener noreferrer"
@@ -30,7 +30,7 @@ const SocialLinks = ({ links }) => {
       <li>
         <a
           className="social__link"
-          href={links.facebook}
+          href={facebook}
           aria-label="Фейсбук"
           target="_blank"
           rel="noopener noreferrer"
@@ -43,7 +43,7 @@ const SocialLinks = ({ links }) => {
       <li>
         <a
           className="social__link"
-          href={links.linkedin}
+          href={linkedin}
           aria-label="Лінкед ін"
           target="_blank"
           rel="noopener noreferrer"
@@ -56,3 +56,5 @@ const SocialLinks = ({ links }) => {
     </ul>
   );
 };
+
+export default SocialLinks;

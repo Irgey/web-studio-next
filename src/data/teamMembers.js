@@ -1,7 +1,7 @@
 export const teamMembers = [
   {
     id: 1,
-    fullName: "Ігор Дем&apos;яненко",
+    fullName: "Ігор Дем'яненко",
     role: "Product Designer",
     photo: "/images/desktop/team/img@2x.jpg",
     socials: {
