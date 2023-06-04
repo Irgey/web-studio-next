@@ -19,7 +19,7 @@ Studio Page
 
 Portfolio Page
 
-![Porfolio Page](./public/images/gh-preview/scr-2.png)
+![Portfolio Page](./public/images/gh-preview/scr-2.png)
 
 Contacts Page
 
