@@ -11,7 +11,8 @@ import services from "../../public/data/services";
 import { useState } from "react";
 
 import { createPortal } from "react-dom";
-import Modal from "@/components/Modal/Modal";
+import Modal from "@/components/Modal/modal";
+import Head from "next/head";
 const Home = () => {
   const [isMenuOpen, setMenuOpen] = useState(false);
 
@@ -20,6 +21,9 @@ const Home = () => {
   };
   return (
     <>
+      <Head>
+        <title>Студія | WebStudio</title>
+      </Head>
       {/* <!-- Hero section --> */}
       <section className="hero">
         <div className="hero__content">

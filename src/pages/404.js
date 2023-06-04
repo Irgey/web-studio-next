@@ -1,3 +1,4 @@
+import Head from "next/head";
 import { useRouter } from "next/router";
 import { useEffect } from "react";
 
@@ -10,6 +11,9 @@ const Error = () => {
   }, [router]);
   return (
     <>
+      <Head>
+        <title>404 | WebStudio</title>
+      </Head>
       <section className="hero">
         {" "}
         <div className="hero__content">

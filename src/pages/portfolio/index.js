@@ -3,11 +3,15 @@ import { useState } from "react";
 import projects from "../../../public/data/projects/projects";
 import filterCategories from "../../../public/data/projects/filterCategories";
 import FilterBtn from "@/components/FilterBtn/FilterBtn";
+import Head from "next/head";
 
 const Portfolio = () => {
   const [filterType, setFilterType] = useState("Усі");
   return (
     <>
+      <Head>
+        <title>Портфоліо | WebStudio</title>
+      </Head>
       {/* <!-- Projects section --> */}
       <section className="product section">
         <div className="container">
